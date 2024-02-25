@@ -10,9 +10,8 @@ body{
 
 header {
 
-    background-color: #1b2127;
-    padding: 20px 0;
-    height: 30px;
+    background-color: #1B216D;
+   
 }
 
 header p {
@@ -37,13 +36,14 @@ nav a{
     font-weight: bold;
 }
 nav a:hover {
-    color: #0077ff;
+    color: #2d78ce;
     text-decoration: underline;
 }
 nav {
-    position: relative;
+    
     display:flex;
-    justify-content: center;
+    justify-content: right;
+    margin-right: 5%;
 }
 .caja {
     display:flex;
@@ -72,10 +72,10 @@ nav {
 }
 .titulo-presentacion{
     display: flex;
-    padding: 0;
-    color: rgb(159, 42, 42);
-    margin: 0 25%;
-}
+    
+    
+    margin: 5% 15%  ;
+}   
 
 .presentacion-texto{
     display: flex;
@@ -84,12 +84,12 @@ nav {
     flex-direction: column;
     padding: 0;
     margin: 1% 25%;
+    font-style: italic;
 }
 .presentacion-texto p {
-    font-size: 18px;
-    padding-left: 10px;
-    color:black;
-    font-style: italic;
+    font-size: 21px;
+    font-style: normal;
+    
 }
 .img-presentacion{
     width: 20%;
@@ -105,6 +105,9 @@ nav {
 h2{
     font-weight: bold;
     text-transform: uppercase;
+    background-color: #f0f4f0;
+    margin: 0;
+    padding-bottom: 2%;
 }
 
 .contac{
@@ -175,7 +178,7 @@ h2{
 }
 .container{
     /*border: 1px solid red; */
-    width:100%;
+    width:40%;
     display: inherit;
     justify-content: inherit;
     
@@ -186,16 +189,16 @@ h2{
 .event{
     /* border: 1px solid red; f4fbff */
     margin:3%;
-    width: 60%;
+    width: 75%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
-    background:#f4fbff;
+    background:#f0f4f0;
 }
 .event-detail{
     margin: 20px 40px;
     margin-top: -40px;
-    background-color: white;
+    background-color: rgb(224, 223, 223);
     position: relative;
     padding: 20px;
     text-align: center;
@@ -211,6 +214,10 @@ h2{
     color: #056fff;
     border-radius: 5px;
 }
+.event-url:hover {
+    background-color: gray;
+    color: #FD2
+}
 .event-list-title{
     margin-left: 20px;
 }
@@ -225,7 +232,9 @@ h2{
 .event-list{
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(white, #0044ff);
+    flex-wrap: wrap;
+    /*background: linear-gradient(rgb(113, 113, 116), #3b4254);*/
+    background-color: rgb(98, 98, 98);
 }
 .content-experiencia{
     display: flex;
