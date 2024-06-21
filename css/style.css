@@ -341,12 +341,13 @@ h2{
         margin:0 auto;
     }
     .titulo-presentacion{
-        font-size: 1.3em;
-        margin: 35% auto 0;
+        font-size: 1.6em;
+        margin: 15% auto 0;
         padding: 5px;
         text-align: center;
-        color:rgb(255, 249, 241);
+        /* color:rgb(255, 249, 241); */
     }
+    .
     .social-link{
         font-size: 25px;
         width: 35px;
@@ -359,6 +360,7 @@ h2{
     }
     .container{
         padding: 0;
+        width: inherit;
     }
     .event{
         width: 80%;
