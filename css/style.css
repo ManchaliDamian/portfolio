@@ -89,7 +89,7 @@ nav {
 .presentacion-texto p {
     font-size: 21px;
     font-style: normal;
-    
+    color: dimgray;
 }
 .img-presentacion{
     width: 20%;
@@ -213,6 +213,7 @@ h2{
     text-decoration: none;
     color: #056fff;
     border-radius: 5px;
+    display: table-cell;
 }
 .event-url:hover {
     background-color: gray;
@@ -347,7 +348,7 @@ h2{
         text-align: center;
         /* color:rgb(255, 249, 241); */
     }
-    .
+    
     .social-link{
         font-size: 25px;
         width: 35px;
