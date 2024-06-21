@@ -213,7 +213,8 @@ h2{
     text-decoration: none;
     color: #056fff;
     border-radius: 5px;
-    display: table-cell;
+    display: block;
+    margin-top: 2%;
 }
 .event-url:hover {
     background-color: gray;
