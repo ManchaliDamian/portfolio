@@ -1,5 +1,10 @@
 
 
+#c2c6ce
+#c0d0ef
+#668dc0
+#304a6e
+#0f1c30
 
 
 
@@ -10,12 +15,14 @@ html {
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: #f0f4f0;
+    background-color: #c2c6ce; /* Gris Claro */
+    /* color: #2C3E50; */
 }
 
 header {
 
-    background-color: #1B216D;
+    background-color: #0f1c30; /* Azul Marino */
+    color: #c0d0ef; /* Blanco */
    
 }
 
@@ -95,6 +102,8 @@ p{
     padding: 1.3rem;
     
     margin-bottom: 10%;
+    /* background-color: #F5F5F5; Azul Claro */
+    color: black; /* Blanco */
 }
 .titulo-presentacion{
     display: flex;
@@ -127,14 +136,15 @@ h2{
 }
 
 .contac{
-    background-color:#0044ff; 
-    color:white;
+    background-color: #2C3E50; /* Azul Marino */
+    color: #FFFFFF; /* Blanco */
     height: 150px;
     display:flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 1.5rem;
+    margin-top: 8%;
 }
 .container-contac{
     max-width: 1000px;
@@ -213,10 +223,11 @@ h2{
     /* transition: background-color 1s ease; */
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.event:hover {
+.social-link:hover , .event:hover   {
     
     transform: translateY(-10px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+    
 }
 .event-detail{
     margin: 20px 40px;
@@ -259,7 +270,8 @@ h2{
     justify-content: space-around;
     flex-wrap: wrap;
     /*background: linear-gradient(rgb(113, 113, 116), #3b4254);*/
-    background-color: rgb(98, 98, 98);
+    background-color: #304a6e; /* Azul Oscuro */
+    color: #0f1c30; /* Blanco */
     padding-bottom: 15%;
 }
 .content-experiencia{
@@ -269,13 +281,14 @@ h2{
 
 .experiencia-titulo{
     text-align: center;
-    background-color: rgb(98, 98, 98);
+    background-color: #304a6e;
+    color: #c2c6ce;
     padding: 5%;
 }
 
 .footer{
-    background-color: #1b2127;
-    color: white;
+    background-color: #2C3E50; /* Azul Marino */
+    color: #FFFFFF; /* Blanco */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -385,7 +398,7 @@ h2{
         font-size: 25px;
         width: 35px;
         height: 35px;
-        padding: 1.8px;
+        padding: 1rem;
     }
     h2{
         font-size: 20px;
