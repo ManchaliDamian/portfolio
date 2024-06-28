@@ -1,11 +1,16 @@
 
 
 
-  
+
+
+html {
+    scroll-behavior: smooth;
+}
  
 body{
     margin: 0;
-    
+    font-family: 'Roboto', sans-serif;
+    background: #f0f4f0;
 }
 
 header {
@@ -45,6 +50,26 @@ nav {
     justify-content: right;
     margin-right: 5%;
 }
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, p {
+    opacity: 0;
+    animation: fadeInLeft 1s ease forwards;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
 .caja {
     display:flex;
     align-items: center;
@@ -67,13 +92,12 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
-    background: #f0f4f0;
+    padding: 1.3rem;
+    
+    margin-bottom: 10%;
 }
 .titulo-presentacion{
     display: flex;
-    
-    
     margin: 5% 15%  ;
 }   
 
@@ -89,25 +113,17 @@ nav {
 .presentacion-texto p {
     font-size: 21px;
     font-style: normal;
-    color: dimgray;
+    
 }
-.img-presentacion{
-    width: 20%;
-    height: 40%;
-    border-radius: 50%;
-    border: solid 2px #0044ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 18px;
-    object-fit: cover;
-}
+
 h2{
+    
     font-weight: bold;
     text-transform: uppercase;
     background-color: #f0f4f0;
     margin: 0;
     padding-bottom: 2%;
+
 }
 
 .contac{
@@ -194,6 +210,13 @@ h2{
     border-radius: 10px;
     overflow: hidden;
     background:#f0f4f0;
+    /* transition: background-color 1s ease; */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.event:hover {
+    
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
 .event-detail{
     margin: 20px 40px;
@@ -237,6 +260,7 @@ h2{
     flex-wrap: wrap;
     /*background: linear-gradient(rgb(113, 113, 116), #3b4254);*/
     background-color: rgb(98, 98, 98);
+    padding-bottom: 15%;
 }
 .content-experiencia{
     display: flex;
@@ -245,6 +269,8 @@ h2{
 
 .experiencia-titulo{
     text-align: center;
+    background-color: rgb(98, 98, 98);
+    padding: 5%;
 }
 
 .footer{
@@ -266,6 +292,7 @@ h2{
 
 
 @media screen and (max-width: 1023px) {
+    
     .event-list-title{
         margin-left: 0;
     }
@@ -306,6 +333,8 @@ h2{
 
 
 @media screen and (max-width: 480px) {
+    
+    
     .img-logo {
         display: none;
     }
