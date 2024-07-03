@@ -22,7 +22,7 @@ body{
 header {
 
     background-color: #0f1c30; /* Azul Marino */
-    color: #c0d0ef; /* Blanco */
+    /* color: #c0d0ef; Blanco */
    
 }
 
@@ -112,7 +112,7 @@ p{
 
 .presentacion-texto{
     display: flex;
-    text-align: center;
+    text-align: justify;
     align-items: center;
     flex-direction: column;
     padding: 0;
