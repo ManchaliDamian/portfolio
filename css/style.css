@@ -15,14 +15,12 @@ html {
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #c2c6ce; /* Gris Claro */
-    /* color: #2C3E50; */
+    background-color: #c2c6ce; 
 }
 
 header {
 
-    background-color: #0f1c30; /* Azul Marino */
-    /* color: #c0d0ef; Blanco */
+    background-color: #0f1c30; 
    
 }
 
@@ -254,9 +252,7 @@ h2{
     background-color: gray;
     color: #FD2
 }
-.event-list-title{
-    margin-left: 20px;
-}
+
 .event-imageContainer{
     margin:0;
 }
@@ -265,19 +261,31 @@ h2{
     height: 210px;
     object-fit: cover;
 }
+
+
+
+
+
 .event-list{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*background: linear-gradient(rgb(113, 113, 116), #3b4254);*/
-    background-color: #304a6e; /* Azul Oscuro */
-    color: #0f1c30; /* Blanco */
+    background-color: #304a6e;
+    color: #0f1c30; 
     padding-bottom: 15%;
-}
-/* .content-experiencia{
-    display: flex;
     
-} */
+    
+    /* queda en opacidad 0 para que cuando baje el scroll se active con el .show */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+.event-list.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .experiencia-titulo{
     text-align: center;
@@ -306,9 +314,7 @@ h2{
 
 @media screen and (max-width: 1023px) {
     
-    .event-list-title{
-        margin-left: 0;
-    }
+    
     .portfolio{
         padding: 0;
     }
@@ -338,10 +344,7 @@ h2{
         font-size: 2em;
         z-index: 2;
     }
-    .image-brasil{
-        width: 87%;
-        height: 480px;
-    }
+    
 }
 
 

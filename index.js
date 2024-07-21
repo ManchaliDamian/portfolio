@@ -27,3 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('scroll', function() {
+    const projects = document.getElementById('evento');
+    const projectsPosition = projects.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3;
+
+    if (projectsPosition < screenPosition) {
+        projects.classList.add('show');
+    }
+});
+
