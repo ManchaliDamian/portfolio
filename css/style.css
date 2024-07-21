@@ -21,7 +21,9 @@ body{
 header {
 
     background-color: #0f1c30; 
-   
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
 }
 
 header p {
@@ -29,6 +31,16 @@ header p {
     font-weight: bold;
     text-align: center;  
     display:flex;
+}
+.figure-logo{
+    
+    width: 5%;
+    margin: 1%;
+    
+}
+.logo {
+    width: 100%;
+    
 }
 nav ul{
     display: flex;
@@ -49,12 +61,7 @@ nav a:hover {
     color: #2d78ce;
     text-decoration: underline;
 }
-nav {
-    
-    display:flex;
-    justify-content: right;
-    margin-right: 5%;
-}
+
 @keyframes fadeInLeft {
     from {
         opacity: 0;
