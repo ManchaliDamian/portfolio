@@ -15,7 +15,8 @@ html {
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #c2c6ce; 
+    /* background-color: #c2c6ce;  */
+    
 }
 
 header {
@@ -106,9 +107,15 @@ p{
     align-items: center;
     padding: 1.3rem;
     
-    margin-bottom: 10%;
+    height: 100vh;
     /* background-color: #F5F5F5; Azul Claro */
-    color: black; /* Blanco */
+    color: whitesmoke; /* Blanco */
+    background: rgb(0, 15, 36);
+    background: linear-gradient(90deg, 
+                rgba(0, 15, 36, 1) 0%, 
+                rgba(70, 86, 159, 1) 50%, 
+                rgba(0, 15, 36, 1) 100%);
+
 }
 .titulo-presentacion{
     display: flex;
