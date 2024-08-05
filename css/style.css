@@ -135,19 +135,13 @@ p{
 }   
 
 .presentacion-texto{
-    display: flex;
-    text-align: justify;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
     padding: 0;
     margin: 1% 25%;
-    font-style: italic;
-}
-.presentacion-texto p {
-    font-size: 21px;
-    font-style: normal;
     
+    font-size: 1.3rem;
 }
+
 
 h2{
     
@@ -331,7 +325,9 @@ h2{
     color: white;
 }
 
-
+.nav-menu.active li {
+    display: flex;
+}
 
 
 @media screen and (max-width: 1023px) {
@@ -379,9 +375,11 @@ h2{
     }
     .presentacion {
         padding: 0;
+        height: 100%;
     }
     .presentacion-texto {
         margin: 1% 10%;
+        font-size: 1rem;
     }
     .logo {
         display: flex;
@@ -401,34 +399,28 @@ h2{
         width: 100%;
         
     }
-    nav {
-        display: none;
+    .nav-menu {
+        display: flex;
         margin: 0 auto;
         
     }
-    nav ul{
+    
+    .nav-menu ul{
         padding: 0;
         margin: 0 auto;
     }
-    nav li {
+    .nav-menu li {
+        display: none;
         margin: 0 0 0 15px ;
     }
-    nav a {
+    .nav-menu a {
         font-size:13px;
     }
-    .img-presentacion{
-        width: 47%;
-        height: 16%;
-        position: absolute;
-        top: 70px;
-        border-radius: 0 0 50px 50px;
-        border: none;
-        margin:0 auto;
-    }
+    
     .titulo-presentacion{
         font-size: 1.6em;
-        margin: 10% auto 0;
-        padding: 5px;
+        margin: 5% auto 0;
+        padding: 0;
         text-align: center;
         /* color:rgb(255, 249, 241); */
     }
