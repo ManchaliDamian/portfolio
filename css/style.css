@@ -299,6 +299,14 @@ h2{
         
         margin: 10% 0;
     } */
+    .presentacion{
+        display: flex;
+        align-items: center;
+        height: 100vmax;
+        
+        
+    
+    }
     .presentacion-texto {
         margin: 1% 10%;
         font-size: 1rem;
