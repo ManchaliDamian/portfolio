@@ -1,13 +1,4 @@
 
-
-#c2c6ce
-#c0d0ef
-#668dc0
-#304a6e
-#0f1c30
-
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -94,27 +85,11 @@ h1, p {
 p{
     font-family: 'Roboto', sans-serif;
 }
-.caja {
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 940px;
-    position: relative;
-    margin: 0 auto; 
-    height: 100%;
-}
-.img-logo{
-    width: 30%;
-}
-.img-logo img{
-    width: 30%;
-    display:flex;
-    border-radius: 20px;
-    object-fit: cover;
-}
+
+
 .presentacion{
     display: flex;
-    justify-content: space-around;
+    
     align-items: center;
     padding: 1.3rem;
     
@@ -130,7 +105,7 @@ p{
 
 }
 .titulo-presentacion{
-    display: flex;
+    
     margin: 5% 15%  ;
 }   
 
@@ -194,31 +169,7 @@ h2{
     width: 80%;
 }
 
-.form-email input{
-    border-color: gray;
-    padding: 10px 20px 10px 25px;
-    border-style: solid;
-    border-radius: 5px;
-    background-image: url('../imagenes/envelope.svg');
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 5px;
-}
-.form-email button {
-    display: block;
-    border-color:gray;
-    margin: 10px;
-    background: transparent;
-    color: white;
-    padding: 10px 0;
-    border-radius: 5px;
-    width: 100px;
-    margin-top: 10px;
-}
-.form-email h3{
-    font-family:"Source Sans Pro", sans-serif;
-}
+
 .container{
     /*border: 1px solid red; */
     width:40%;
@@ -314,15 +265,9 @@ h2{
     color: #FFFFFF; /* Blanco */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  
 }
-.footer img {
-    vertical-align: middle;
-}
-.footer a{
-    color: white;
-}
+
 
 .nav-menu.active li {
     display: flex;
@@ -331,35 +276,13 @@ h2{
 
 @media screen and (max-width: 1023px) {
     
-    
-    .portfolio{
-        padding: 0;
-    }
     .container{
         padding: 0 1em;
     }
-    .container-brasil{
-        width: auto;
-    }
-    .hero{
-        height: auto;
-        position: relative;
-        overflow: hidden;
-        padding: 2em;
-        object-position: center 25%;
-    }
-    .hero-img {
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-    }
+   
     h1 {
         font-size: 2em;
-        z-index: 2;
+       
     }
     
 }
@@ -399,12 +322,7 @@ h2{
         
         
     }
-    .caja{
-        display: inline;
-        margin: 0 auto;
-        width: 100%;
-        
-    }
+   
     .nav-menu {
         display: flex;
         margin: 0 auto;
@@ -468,15 +386,6 @@ h2{
     .container-contac {
         align-items: center;
     }
-    .form-email button {
-        margin: 1em auto;
-    }
-    .form-email h3{
-        margin-top: 0;
-    }
-    .footer{
-        display: block;
-        text-align: center;
-        border: 1px solid transparent;
-    }
+   
+    
 }
