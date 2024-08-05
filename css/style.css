@@ -44,6 +44,16 @@ header p {
     width: 100%;
     
 }
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+
+
+
 nav ul{
     display: flex;
 }
@@ -278,10 +288,6 @@ h2{
     object-fit: cover;
 }
 
-
-
-
-
 .event-list{
     display: flex;
     justify-content: space-around;
@@ -366,20 +372,28 @@ h2{
 
 @media screen and (max-width: 480px) {
     
+
+    .hamburger {
+        display: block;
+        
+    }
     .presentacion {
         padding: 0;
     }
     .presentacion-texto {
         margin: 1% 10%;
     }
-    .img-logo {
-        display: none;
+    .logo {
+        display: flex;
+        width: 2rem;
+        
     }
     header {
         width: 100%;
         margin: 0 auto;
-        height: 2rem;
-        padding: 0.8rem 0 0;
+        height: 3rem;
+        
+        
     }
     .caja{
         display: inline;
@@ -388,6 +402,7 @@ h2{
         
     }
     nav {
+        display: none;
         margin: 0 auto;
         
     }
