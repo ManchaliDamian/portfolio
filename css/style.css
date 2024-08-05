@@ -310,6 +310,9 @@ h2{
         align-items: center;
         
     }
+    .titulo-presentacion {
+        margin: 0;
+    }
     .logo {
         display: flex;
         width: 2rem;
