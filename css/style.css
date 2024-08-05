@@ -374,7 +374,7 @@ h2{
     }
     .presentacion {
         padding: 0;
-        height: 100%;
+        /* height: 100%; */
     }
     .presentacion-texto {
         margin: 1% 10%;
