@@ -295,10 +295,10 @@ h2{
         display: block;
         
     }
-    .presentacion {
+    /* .presentacion {
         
         margin: 10% 0;
-    }
+    } */
     .presentacion-texto {
         margin: 1% 10%;
         font-size: 1rem;
