@@ -295,27 +295,10 @@ h2{
         display: block;
         
     }
-    /* .presentacion {
-        
-        margin: 10% 0;
-    } */
-    .presentacion{
-        display: flex;
-        align-items: center;
-        height: 100vmax;
-        
-        
-    
-    }
     .presentacion-texto {
         margin: 1% 10%;
         font-size: 1rem;
-        /* height: 100vh; */
-        display: flex;
-        /* align-content: center; */
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        
         
     }
     .titulo-presentacion {
