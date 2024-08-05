@@ -1,17 +1,31 @@
 
 
+#c2c6ce
+#c0d0ef
+#668dc0
+#304a6e
+#0f1c30
 
-  
+
+
+html {
+    scroll-behavior: smooth;
+}
  
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #c2c6ce; 
+    /* background-color: rgb(58, 68, 83); */
     
 }
 
 header {
 
-    background-color: #1B216D;
-   
+    background-color: rgb(0, 15, 36, 1); 
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
 }
 
 header p {
@@ -20,6 +34,26 @@ header p {
     text-align: center;  
     display:flex;
 }
+.figure-logo{
+    
+    width: 5%;
+    margin: 1%;
+    
+}
+.logo {
+    width: 100%;
+    
+}
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+
+
+
 nav ul{
     display: flex;
 }
@@ -39,11 +73,26 @@ nav a:hover {
     color: #2d78ce;
     text-decoration: underline;
 }
-nav {
-    
-    display:flex;
-    justify-content: right;
-    margin-right: 5%;
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, p {
+    opacity: 0;
+    animation: fadeInLeft 1s ease forwards;
+}
+p{
+    font-family: 'Roboto', sans-serif;
 }
 .caja {
     display:flex;
@@ -67,58 +116,52 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
-    background: #f0f4f0;
+    padding: 1.3rem;
+    
+    height: 100vh;
+    /* background-color: #F5F5F5; Azul Claro */
+     /* Blanco */
+    background-color: #c2c6ce; 
+    /* background: rgb(58, 68, 83); */
+    /* background: linear-gradient(90deg, 
+                rgba(0, 15, 36, 1) 0%, 
+                rgba(70, 86, 159, 1) 50%, 
+                rgba(0, 15, 36, 1) 100%); */
+
 }
 .titulo-presentacion{
     display: flex;
-    
-    
     margin: 5% 15%  ;
 }   
 
 .presentacion-texto{
-    display: flex;
     text-align: center;
-    align-items: center;
-    flex-direction: column;
     padding: 0;
     margin: 1% 25%;
-    font-style: italic;
+    font-size: 1.3rem;
 }
-.presentacion-texto p {
-    font-size: 21px;
-    font-style: normal;
-    color: dimgray;
-}
-.img-presentacion{
-    width: 20%;
-    height: 40%;
-    border-radius: 50%;
-    border: solid 2px #0044ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 18px;
-    object-fit: cover;
-}
+
+
 h2{
+    
     font-weight: bold;
     text-transform: uppercase;
     background-color: #f0f4f0;
     margin: 0;
     padding-bottom: 2%;
+
 }
 
 .contac{
-    background-color:#0044ff; 
-    color:white;
+    background-color: rgb(0, 15, 36, 1); /* Azul Marino */
+    color: #FFFFFF; /* Blanco */
     height: 150px;
     display:flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 1.5rem;
+    margin-top: 8%;
 }
 .container-contac{
     max-width: 1000px;
@@ -194,6 +237,14 @@ h2{
     border-radius: 10px;
     overflow: hidden;
     background:#f0f4f0;
+    /* transition: background-color 1s ease; */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.social-link:hover , .event:hover   {
+    
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+    
 }
 .event-detail{
     margin: 20px 40px;
@@ -220,9 +271,7 @@ h2{
     background-color: gray;
     color: #FD2
 }
-.event-list-title{
-    margin-left: 20px;
-}
+
 .event-imageContainer{
     margin:0;
 }
@@ -231,25 +280,38 @@ h2{
     height: 210px;
     object-fit: cover;
 }
+
 .event-list{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*background: linear-gradient(rgb(113, 113, 116), #3b4254);*/
-    background-color: rgb(98, 98, 98);
-}
-.content-experiencia{
-    display: flex;
+    background-color: #304a6e;
+    color: #0f1c30; 
+    padding-bottom: 15%;
     
+    
+    /* queda en opacidad 0 para que cuando baje el scroll se active con el .show */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
 }
+
+.event-list.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .experiencia-titulo{
     text-align: center;
+    background-color: #304a6e;
+    color: white;
+    padding: 5%;
 }
 
 .footer{
-    background-color: #1b2127;
-    color: white;
+    background-color: #2C3E50; /* Azul Marino */
+    color: #FFFFFF; /* Blanco */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -262,13 +324,14 @@ h2{
     color: white;
 }
 
-
+.nav-menu.active li {
+    display: flex;
+}
 
 
 @media screen and (max-width: 1023px) {
-    .event-list-title{
-        margin-left: 0;
-    }
+    
+    
     .portfolio{
         padding: 0;
     }
@@ -298,22 +361,36 @@ h2{
         font-size: 2em;
         z-index: 2;
     }
-    .image-brasil{
-        width: 87%;
-        height: 480px;
-    }
+    
 }
 
 
 @media screen and (max-width: 480px) {
-    .img-logo {
-        display: none;
+    
+
+    .hamburger {
+        display: block;
+        
+    }
+    .presentacion {
+        padding: 0;
+        height: 100%;
+    }
+    .presentacion-texto {
+        margin: 1% 10%;
+        font-size: 1rem;
+    }
+    .logo {
+        display: flex;
+        width: 2rem;
+        
     }
     header {
         width: 100%;
         margin: 0 auto;
-        height: 2rem;
-        padding: 0.8rem 0 0;
+        height: 3rem;
+        
+        
     }
     .caja{
         display: inline;
@@ -321,46 +398,44 @@ h2{
         width: 100%;
         
     }
-    nav {
+    .nav-menu {
+        display: flex;
         margin: 0 auto;
         
     }
-    nav ul{
+    
+    .nav-menu ul{
         padding: 0;
         margin: 0 auto;
     }
-    nav li {
+    .nav-menu li {
+        display: none;
         margin: 0 0 0 15px ;
     }
-    nav a {
+    .nav-menu a {
         font-size:13px;
     }
-    .img-presentacion{
-        width: 47%;
-        height: 16%;
-        position: absolute;
-        top: 70px;
-        border-radius: 0 0 50px 50px;
-        border: none;
-        margin:0 auto;
-    }
+    
     .titulo-presentacion{
         font-size: 1.6em;
-        margin: 15% auto 0;
-        padding: 5px;
+        margin: 5% auto 0;
+        padding: 0;
         text-align: center;
         /* color:rgb(255, 249, 241); */
     }
-    
+    .social img {
+        width: 150%;
+    }
     .social-link{
-        font-size: 25px;
-        width: 35px;
-        height: 35px;
-        padding: 1.8px;
+        
+        width: 20px;
+        height: 20px;
+        padding: 1rem;
+        margin-top: 1%;
     }
     h2{
         font-size: 20px;
-        margin: 10px 0;
+        margin: 0;
     }
     .container{
         padding: 0;
@@ -382,6 +457,9 @@ h2{
         padding: 1.5em;
         text-align: center;
         display: block;
+    }
+    .container-contac {
+        align-items: center;
     }
     .form-email button {
         margin: 1em auto;

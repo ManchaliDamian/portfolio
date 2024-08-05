@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="imagenes/logo.jpg">
+    <link rel="icon" type="image/png" href="imagenes/logo/logo.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Damián Manchali</title>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="hamburger" id="hamburger">
+            &#9776; <!-- Este es el símbolo de hamburguesa -->
+        </div>
+        <figure class="figure-logo">
+            <img class="logo" src="imagenes/logo/logo.jpg" alt="">
+
+        </figure>
+        
+        <nav id="nav-menu" class="nav-menu">
             <ul>
-                <li><a href="#presentacion">Sobre mí</a></li>
-                <li><a href="#experiencia">Proyectos</a></li>
-                <li><a href="#contac">Contactos</a></li>
+                <li><a href="#presentacion" id="presentacion-link">Sobre mí</a></li>
+                <li><a href="#experiencia" id="experiencia-link">Proyectos</a></li>
+                <li><a href="#contac" id="contac-link">Contactame</a></li>
             </ul>
 
         </nav>
@@ -23,17 +32,30 @@
     <div class="presentacion" id="presentacion">
         <div class="presentacion-texto">
             <h1 class="titulo-presentacion">Hola, mi nombre es Damián Manchali </h1>
-            
+        
             <p>Me gusta aprender de forma autodidacta, también mejorar en la eficacia para resolver problemas, como pensarlos, escribirlos y analizarlos para
             lograr la mejor solución posible. Soy una persona proactiva, responsable y flexible. Me siento cómodo trabajando en equipo.
+<<<<<<< HEAD
             </p>
+=======
+                </p>
+            <p>Tengo conocimientos en los lenguajes de programación como JS, Java, SQL. </p>
+            <p>Como también en React, HTML, Css, git y redes. </p>
+            <p>Tengo conocimientos en Patrones de diseño. </p>
+            <p>Con muchas ganas de seguir aprendiendo más.</p>
+
+            
+>>>>>>> animaciones
 
         </div>
         
     </div>
     <h2 class="experiencia-titulo" id="experiencia">Proyectos realizados</h2>
-    <section class="content-experiencia" >
-        <section id="evento" class="event-list">
+
+
+
+
+        <section id="evento" class=" event-list ">
             <div class="container">
                 <article class="event">
                     <figure class="event-imageContainer">
@@ -112,18 +134,25 @@
         
                 
         
-    </section>
+    
 
     <section id="contac" class="contac">
         <div class="container-contac">
+            <p>
+                Contactame en mis redes sociales!
+            </p>
                     <div class="social">
                         <a href="https://www.linkedin.com/in/damian-manchali-56a389198/" class="social-link icon-facebook" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></a>
                         <a href="https://github.com/ManchaliDamian" class="social-link icon-github" target="_blank"><img src="imagenes/github.svg" alt="" ></a>
                         <a href="https://twitter.com/AlexNowsky" class="social-link icon-twitter" target="_blank"> <img src="imagenes/twitter.svg" alt="" ></a>
-                        <a href="https://Wa.me/+541131403328" class="social-link icon-instagram" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                            width="40" height="40"
-                            viewBox="0 0 30 30"
-                            style=" fill:#fff;">    <path d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z"></path></svg></a>
+                        <a href="https://Wa.me/+541131403328" class="social-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" 
+                                width="40" height="40"
+                                viewBox="0 0 30 30"
+                                style=" fill:#fff;">    
+                                    <path d="M 15 3 C 8.373 3 3 8.373 3 15 C 3 17.251208 3.6323415 19.350068 4.7109375 21.150391 L 3.1074219 27 L 9.0820312 25.431641 C 10.829354 26.425062 12.84649 27 15 27 C 21.627 27 27 21.627 27 15 C 27 8.373 21.627 3 15 3 z M 10.892578 9.4023438 C 11.087578 9.4023438 11.287937 9.4011562 11.460938 9.4101562 C 11.674938 9.4151563 11.907859 9.4308281 12.130859 9.9238281 C 12.395859 10.509828 12.972875 11.979906 13.046875 12.128906 C 13.120875 12.277906 13.173313 12.453437 13.070312 12.648438 C 12.972312 12.848437 12.921344 12.969484 12.777344 13.146484 C 12.628344 13.318484 12.465078 13.532109 12.330078 13.662109 C 12.181078 13.811109 12.027219 13.974484 12.199219 14.271484 C 12.371219 14.568484 12.968563 15.542125 13.851562 16.328125 C 14.986562 17.342125 15.944188 17.653734 16.242188 17.802734 C 16.540187 17.951734 16.712766 17.928516 16.884766 17.728516 C 17.061766 17.533516 17.628125 16.864406 17.828125 16.566406 C 18.023125 16.268406 18.222188 16.319969 18.492188 16.417969 C 18.766188 16.515969 20.227391 17.235766 20.525391 17.384766 C 20.823391 17.533766 21.01875 17.607516 21.09375 17.728516 C 21.17075 17.853516 21.170828 18.448578 20.923828 19.142578 C 20.676828 19.835578 19.463922 20.505734 18.919922 20.552734 C 18.370922 20.603734 17.858562 20.7995 15.351562 19.8125 C 12.327563 18.6215 10.420484 15.524219 10.271484 15.324219 C 10.122484 15.129219 9.0605469 13.713906 9.0605469 12.253906 C 9.0605469 10.788906 9.8286563 10.071437 10.097656 9.7734375 C 10.371656 9.4754375 10.692578 9.4023438 10.892578 9.4023438 z"></path>
+                                </svg>
+                            </a>
                     </div>
         </div>
     </section>
@@ -134,9 +163,14 @@
                     Derechos reservados
                 </p> 
             </div>
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> animaciones
             
         </div>
     </footer> 
+    <script src="index.js"></script>
 </body>
 </html>
