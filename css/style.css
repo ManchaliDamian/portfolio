@@ -92,8 +92,8 @@ p{
     
     align-items: center;
     padding: 1.3rem;
+    padding-top: 0;
     
-    height: 100vh;
     /* background-color: #F5F5F5; Azul Claro */
      /* Blanco */
     background-color: #c2c6ce; 
