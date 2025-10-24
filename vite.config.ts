@@ -6,8 +6,16 @@ import { componentTagger } from "lovable-tagger";
 const isProduction = process.env.NODE_ENV === 'production';
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: "/portfolio/",
-  plugins: [react()],
-})
-
+export default defineConfig(({ mode }) => ({
+  server: {
+    host: "::",
+    port: 8080,
+  },
+  base: '/portfolio/',
+  plugins: [react(), !isProduction && componentTagger()].filter(Boolean),
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+}));
